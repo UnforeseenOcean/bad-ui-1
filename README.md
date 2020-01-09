@@ -1,2 +1,2 @@
-# bad-ui
+# Bad UI
 Joke UI's for /r/baduibattles
