@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Delete account</title>
+
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+  <style>
+    .modal {
+      width: 35%;
+    }
+  </style>
+</head>
+
+<body>
+  <nav>
+    <div class="nav-wrapper blue">
+      <div class="container">
+        <a href="#" class="brand-logo">Social Media Site 2000</a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Components</a></li>
+          <li class="active"><a href="#">Settings</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="divider"></div>
+    <div class="section">
+      <h5>Change password</h5>
+      <form class="col s12">
+        <div class="row">
+          <div class="input-field col s6">
+            <input id="current-password" type="password" class="validate">
+            <label for="current-password">Current password</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s6">
+            <input id="new-password" type="password" class="validate">
+            <label for="new-password">New password</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s6">
+            <input id="new-password2" type="password" class="validate">
+            <label for="new-password2">Repeat new password</label>
+          </div>
+        </div>
+      </form>
+      <button class="btn waves-effect waves-light blue">Save</button>
+    </div>
+    <div class="divider"></div>
+    <div class="section">
+      <h5>Delete your account</h5>
+      <button data-target="modal1" class="btn waves-effect waves-light red modal-trigger">Delete account</button>
+    </div>
+  </div>
+
+  <!-- Modal Structure -->
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+      <h4>Log out</h4>
+      <p>We're sorry to see you go. Are you sure you don't want to stay?</p>
+      <p><strong>Warning!</strong> This cannot be <s>un</s>done!</p>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-close waves-effect waves-light btn red">Yes, I want to stay</a>
+      <a href="#!" class="modal-close waves-effect waves-gray btn white black-text">No, take me back</a>
+    </div>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var elems = document.querySelectorAll('.modal');
+      var instances = M.Modal.init(elems);
+    });
+  </script>
+</body>
+
+</html>
